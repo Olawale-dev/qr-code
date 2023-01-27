@@ -1,0 +1,81 @@
+/*VARIABLES*/
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --Mobile: 375px;
+    --Desktop: 1440px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1440px) {
+    head {
+        font-size: 62.5%;
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    body {
+        background-color: var(--Light-gray);
+        width: 100vw;
+        height: 80vh;       
+    }
+    
+    .card {
+        background-color: var(--White);
+        width: 22rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 10vh auto;
+        text-align: center;
+        box-shadow: 1px 2px 10px hsl(216, 9%, 68%);
+    }
+
+
+    .card__image {
+        display: block;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        height: 20rem;
+
+    }
+    
+    .card__heading {
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+        color: var(--Dark-blue);
+
+    }
+    
+    .card__paragraph {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 1rem;
+        color: var(--Grayish-blue);
+    }
+    
+    .attribution {
+        font-size: 11px; 
+        text-align: center;
+        margin: auto;
+    }
+    
+    a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        scale: 0.9;
+    }
+}
